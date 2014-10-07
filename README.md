@@ -33,7 +33,7 @@ var vals = diff( data );
 // returns [ -2, 1, -8, 5 ]
 ```
 
-Note: the returned `array` will have a length which is one element less than the original `array`; i.e., if `arr.length = 10`, then `diff( arr ).length = 9`.
+Note: the returned `array` will have a length which is one less than the original `array`; i.e., if `arr.length = 10`, then `diff( arr ).length = 9`.
 
 
 ## Examples
