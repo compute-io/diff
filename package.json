@@ -29,7 +29,8 @@
     "mathematics",
     "math",
     "arithmetic",
-    "array"
+    "array",
+    "differences"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/diff/issues"
