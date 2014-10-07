@@ -19,14 +19,34 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 To use the module,
 
 ``` javascript
-var lib = require( 'compute-diff' );
+var diff = require( 'compute-diff' );
 ```
+
+#### diff( arr )
+
+Computes the differences between adjacent array values.
+
+``` javascript
+var data = [ 1, 3, 2, 10, 5 ];
+
+var vals = diff( data );
+// returns [ -2, 1, -8, 5 ]
+```
+
+Note: the returned `array` will have a length which is one element less than the original `array`; i.e., if `arr.length = 10`, then `diff( arr ).length = 9`.
 
 
 ## Examples
 
 ``` javascript
-var lib = require( 'compute-diff' );
+var diff = require( 'compute-diff' );
+
+var data = new Array( 100 );
+for ( var i = 0; i < data.length; i++ ) {
+	data[ i ] = Math.round( Math.random() * 100 );
+}
+
+console.log( diff( data ) );
 ```
 
 To run the example code from the top-level application directory,
